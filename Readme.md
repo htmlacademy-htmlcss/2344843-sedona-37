@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [m4rk1z](https://up.htmlacademy.ru/htmlcss/37/user/2344843).
-* Наставник: `Александр Медведев`.
+* Наставник: [`Александр Медведев`](https://htmlacademy.ru/profile/exteep).
 
 ---
 
