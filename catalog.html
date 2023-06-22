@@ -51,6 +51,119 @@
           </li>
         </ul>
       </header>
+      <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
+        <h2 class="visually-hidden">Фильтр гостиниц</h2>
+        <fieldset class="filter-price">
+          <legend class="filter-title">Инфраструктура:</legend>
+          <ul class="filter-list">
+            <li class="filter-item">
+              <label class="control">
+                <input
+                  type="checkbox"
+                  class="control-input"
+                  name="pool"
+                  checked/>
+                Бассейн</label>
+            </li>
+            <li class="filter-item">
+              <label class="control">
+                <input
+                  type="checkbox"
+                  class="control-input"
+                  name="parking"
+                  checked/>
+                Парковка</label>
+            </li>
+            <li class="filter-item">
+              <label class="control">
+                <input type="checkbox" class="control-input" name="wi-fi" />
+                Wi-Fi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter-price">
+          <legend class="filter-title">Тип жилья:</legend>
+          <ul class="filter-list">
+            <li class="filter-item">
+              <label class="control">
+                <input
+                  type="radio"
+                  class="control-input"
+                  name="house"
+                  checked/>
+                Гостиница</label>
+            </li>
+            <li class="filter-item">
+              <label class="control">
+                <input
+                  type="radio"
+                  class="control-input"
+                  name="house"/>
+                Мотель</label>
+            </li>
+            <li class="filter-item">
+              <label class="control"
+                ><input
+                  type="radio"
+                  class="control-input"
+                  name="house"/>
+                Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter-price">
+          <legend class="filter-title">Стоимость, ₽:</legend>
+          <input
+            class="price-from"
+            name="price-from"
+            type="number"
+            value="0"
+            min="0"
+            max="10000"
+            placeholder="от"/>
+          <input
+            class="price-to"
+            name="price-to"
+            type="number"
+            value="9000"
+            min="0"
+            max="10000"
+            placeholder="до"/>
+          <div class="slider">
+          </div>
+        </fieldset>
+        <button class="submit-button" type="submit">Применить</button>
+        <button class="reset-button" type="reset">Сбросить</button>
+      </form>
+    </div>
+    <section class="catalog-hotels-select">
+      <h2 class="visually-hidden">Список гостиниц</h2>
+      <div class="catalog-rating">
+        <p class="search-result">Найдено гостиниц: 38</p>
+        <select class="select-input" aria-label="Сортировка">
+          <option value="cheap">Сначала дешевые</option>
+          <option value="expensive">Сначала дорогие</option>
+          <option value="rating-high">По рейтингу &uarr;</option>
+          <option value="rating-low">По рейтингу &darr;</option>
+        </select>
+        <ul class="card-buttons">
+          <li class="card-item">
+            <button class="card-button-grid active" type="button">
+              <span class="visually-hidden">Сетка</span>
+            </button>
+          </li>
+          <li class="card-item">
+            <button class="card-button-slider" type="button">
+              <span class="visually-hidden">Слайдер</span>
+            </button>
+          </li>
+          <li class="card-item">
+            <button class="card-button-list" type="button">
+              <span class="visually-hidden">Список</span>
+            </button>
+          </li>
+        </ul>
+      </div>
     </main>
 </body>
 </html>
