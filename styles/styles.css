@@ -42,3 +42,19 @@ body {
   background-color: #f2f2f2;
   color: #000000;
 }
+
+.main-header {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.navigation-link {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: inherit;
+  text-transform: capitalize;
+  text-decoration: none;
+}
