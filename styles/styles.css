@@ -195,7 +195,6 @@ body {
 }
 
 .button-brown:focus-visible {
-  border-radius: 4px;
   background-color: #615048;
   outline: 3px solid #83b3d3;
   outline-offset: unset;
@@ -203,7 +202,6 @@ body {
 
 @supports not selector(:focus-visible) {
   .button-brown:focus {
-    border-radius: 4px;
     background-color: #615048;
     outline: 3px solid #83b3d3;
     outline-offset: unset;
@@ -220,24 +218,22 @@ body {
 }
 
 .button-blue {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .button-blue:hover {
-  background-color: #68A2ca;
+  background-color: #68a2ca;
 }
 
 .button-blue:focus-visible {
-  border-radius: 4px;
-  background-color: #68A2ca;
+  background-color: #68a2ca;
   outline: 3px solid #83b3d3;
   outline-offset: unset;
 }
 
 @supports not selector(:focus-visible) {
   .button-blue:focus {
-    border-radius: 4px;
-    background-color: #68A2CA;
+    background-color: #68a2ca;
     outline: 3px solid #83b3d3;
     outline-offset: unset;
   }
@@ -245,11 +241,41 @@ body {
 
 .button-blue:active {
   color: rgba(255, 255, 255, 0.3);
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .button-blue.disabled {
   background-color: #e5e5e5;
+}
+
+.button-transparent {
+  background-color: transparent;
+}
+
+.button-transparent:hover {
+  opacity: 0.6;
+}
+
+.button-transparent:focus-visible {
+  outline: 3px solid #83b3d3;
+  outline-offset: unset;
+}
+
+@supports not selector(:focus-visible) {
+  .button-transparent:focus {
+    outline: 3px solid #83b3d3;
+    outline-offset: unset;
+  }
+}
+
+.button-transparent:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-transparen.disabled,
+.button-transparent:disabled {
+  opacity: 0.1;
+  pointer-events: none;
 }
 
 .hero {
@@ -480,7 +506,7 @@ body {
   line-height: 24px;
   font-size: 18px;
   font-weight: 700;
-  background: #F2F2F2;
+  background: #f2f2f2;
   border: none;
   border-radius: 4px 0 0 4px;
 }
@@ -491,12 +517,12 @@ body {
 }
 
 .subscribe-email:hover {
-  background: #E6E6E6;
+  background: #e6e6e6;
 }
 
 .subscribe-email:focus {
-  outline: 3px solid #83B3D3;
-  background: #E6E6E6;
+  outline: 3px solid #83b3d3;
+  background: #e6e6e6;
   outline-offset: -3px;
 }
 
@@ -671,43 +697,74 @@ body {
 /*catalog*/
 
 .catalog-section {
-  box-sizing: border-box;
-  width: 100%;
   padding: 35px 70px 70px;
   color: #ffffff;
   background-image: url("/img/catalog/background-catalog.jpg");
   background-size: cover;
+  background-position: center;
 }
 .catalog-header {
   margin-bottom: 40px;
 }
 
 .main-title {
-  margin: 0 0 8px;
+  margin: 0;
+  margin-bottom: 8px;
   font-size: 60px;
   line-height: 78px;
-  font-weight: 700;
-  color: #fff;
 }
+
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
   margin: 0;
   padding: 0;
   list-style: none;
+  word-break: break-all;
 }
+
 .breadcrumbs-item {
   position: relative;
   font-size: 16px;
-  line-height: 21px;
+}
+.breadcrumbs-item:not(:last-child) {
+  padding-right: 28px;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  display: block;
+  width: 8px;
+  height: 21px;
+  content: "";
+  background-image: url("../img/catalog/breadcrumbs-vector.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .breadcrumbs-link {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 21px;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
+}
+
+.breadcrumbs-link-index {
+  display: block;
+  width: 13px;
+  height: 21px;
+  background-image: url("../img/catalog/breadcrumbs-index.svg");
+  background-repeat: no-repeat;
+  background-position: center top 3px;
+}
+
+.breadcrumbs-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:active {
+  opacity: 0.3;
 }
 
 .filter {
@@ -715,49 +772,32 @@ body {
   flex-wrap: wrap;
 }
 
-.filter fieldset {
-  padding: 0;
-  border: none;
-}
-
 .filter-group {
-  width: 150px;
+  padding: 0;
   margin: 0;
-  margin-right: 70px;
+  border: none;
 }
 
 .filter-group-infrastructure {
   width: 150px;
-  margin: 0;
   margin-right: 70px;
 }
 
 .filter-group-housing {
   width: 150px;
-  margin: 0;
-  margin-right: 141px;
+  margin-right: auto;
 }
 
 .filter-group-price {
-  width: 150px;
-  margin: 0;
+  width: 288px;
   margin-right: 70px;
-}
-
-.filter-item {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 23px;
-  color: #fff;
 }
 
 .filter-title {
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
   line-height: 24px;
   text-transform: capitalize;
-  color: #fff;
   margin-bottom: 32px;
   padding: 0;
 }
@@ -769,78 +809,204 @@ body {
   list-style: none;
 }
 
+.filter-item {
+  position: relative;
+  padding-left: 36px;
+}
+
+.filter-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
 .control {
-  display: flex;
-  align-items: center;
   cursor: pointer;
 }
 
 .control-input {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 20px;
   height: 20px;
   margin: 0;
-  margin-right: 16px;
   border-radius: 4px;
   background-color: #ffffff;
   appearance: none;
   cursor: pointer;
 }
 
+.control-input[type="checkbox"]:checked {
+  background-image: url("../img/catalog/filter-checked.svg");
+}
+
+.control-input[type="radio"] {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked::after {
+  display: block;
+  margin: 5px;
+  width: 10px;
+  height: 10px;
+  content: "";
+  border-radius: 50%;
+  background-color: #3f5e72;
+}
+
+.control:hover {
+  opacity: 0.6;
+}
+
+.control-input:focus-visible {
+  outline: 3px solid #83b3d3;
+  outline-offset: unset;
+}
+
+@supports not selector(:focus-visible) {
+  .control-input:focus {
+    outline: 3px solid #83b3d3;
+    outline-offset: unset;
+  }
+}
+
+.control:active {
+  opacity: 0.3;
+}
+
 .price-range-wrapper {
-  position: relative;
   display: flex;
-  margin-bottom: 44px;
+  margin-bottom: 36px;
 }
 
 .price-range-label {
   position: relative;
 }
 
-.price-from {
-  box-sizing: border-box;
-  max-width: 143px;
+.price-range-label span {
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  color: #000000;
+  line-height: 24px;
+  opacity: 0.3;
+}
+
+.price-range-label:not(:last-child) {
+  margin-right: 2px;
+}
+
+.price {
+  width: 143px;
   padding: 12px 20px;
-  padding-right: 40px;
+  padding-right: 44px;
   font-family: inherit;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   background-color: #f2f2f2;
   border: none;
-  appearance: none;
 }
+
+.price::-webkit-outer-spin-button,
+.price::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.price {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
+.price-from {
+  border-radius: 4px 0 0 4px;
+}
+
+.price-to {
+  border-radius: 0 4px 4px 0;
+}
+
+.price:hover {
+  background-color: #e6e6e6;
+}
+
+.price:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+  outline-offset: unset;
+}
+
+.range {
+  width: 288px;
+  height: 20px;
+  padding: 8px 0;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  height: 100%;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-min {
+  left: 0;
+}
+
+.toggle-max {
+  right: 0;
+}
+
+.range-toggle:focus-visible {
+  outline: 3px solid #83b3d3;
+  outline-offset: unset;
+}
+
+@supports not selector(:focus-visible) {
+  .range-toggle:focus {
+    outline: 3px solid #83b3d3;
+    outline-offset: unset;
+  }
+}
+
+.range-toggle:active {
+  outline: 2px solid #83b3d3;
+  outline-offset: unset;
+}
+
 .button-filter-wrapper {
   display: flex;
   flex-direction: column;
+  min-width: 191px;
   margin-top: 56px;
 }
 
 .button-filter-wrapper .button {
-  max-width: 191px;
+  min-width: 191px;
   padding: 8px 50px;
   border: none;
   cursor: pointer;
 }
 
-.submit-button {
-  font-size: 16px;
-  line-height: 20px;
-  padding: 8px 50px;
-  text-transform: uppercase;
-  text-align: center;
-  color: #fff;
+.filter .button:not(:last-child) {
   margin-bottom: 32px;
-  background-color: #82b3d3;
-}
-
-.reset-button {
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  text-align: center;
-  color: #ffffff;
-  background-color: transparent;
 }
 
 /*Каталог*/
