@@ -194,7 +194,9 @@
               <button class="button button-blue" type="submit">
                 Применить
               </button>
-              <button class="button button-transparent" type="reset">Сбросить</button>
+              <button class="button button-transparent" type="reset">
+                Сбросить
+              </button>
             </div>
           </form>
         </section>
@@ -202,30 +204,31 @@
           <h2 class="visually-hidden">Список гостиниц</h2>
           <section class="catalog-hotels-select">
             <h3 class="visually-hidden">Сортировка гостиниц</h3>
-            <div class="catalog-rating">
-              <p class="search-result">Найдено гостиниц: 38</p>
-              <select class="select-input" aria-label="Сортировка">
-                <option value="cheap">Сначала дешевые</option>
-                <option value="expensive">Сначала дорогие</option>
-              </select>
-              <ul class="card-buttons">
-                <li class="card-item">
-                  <button class="card-button-grid active" type="button">
-                    <span class="visually-hidden">Сетка</span>
-                  </button>
-                </li>
-                <li class="card-item">
-                  <button class="card-button-slider" type="button">
-                    <span class="visually-hidden">Слайдер</span>
-                  </button>
-                </li>
-                <li class="card-item">
-                  <button class="card-button-list" type="button">
-                    <span class="visually-hidden">Список</span>
-                  </button>
-                </li>
-              </ul>
-            </div>
+            <p class="search-result">Найдено гостиниц: 38</p>
+            <select class="select-input" aria-label="Сортировка">
+              <option value="cheap">Сначала дешевые</option>
+              <option value="expensive">Сначала дорогие</option>
+            </select>
+            <ul class="card-buttons">
+              <li class="card-item">
+                <button
+                  class="card-button card-button-grid active"
+                  type="button"
+                >
+                  <span class="visually-hidden">Сетка</span>
+                </button>
+              </li>
+              <li class="card-item">
+                <button class="card-button card-button-slider" type="button">
+                  <span class="visually-hidden">Слайдер</span>
+                </button>
+              </li>
+              <li class="card-item">
+                <button class="card-button card-button-list" type="button">
+                  <span class="visually-hidden">Список</span>
+                </button>
+              </li>
+            </ul>
           </section>
           <!--Каталог-->
           <ul class="hotel-card-list">
@@ -242,10 +245,16 @@
               <div class="hotel-info">
                 <span class="hotel-card-type">Гостиница</span>
                 <span class="hotel-card-price">От 4000 ₽</span>
-                <a class="button-hotel hotel-more" href="#">Подробнее</a>
-                <button class="button btn-blue" type="button">
+                <a class="button button-brown button-hotel" href="#">Подробнее</a>
+                <button class="button button-blue button-hotel" type="button">
                   В избранное
                 </button>
+                <div class="stars-wrap" aria-label="Рейтинг в звёздах.">
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                </div>
                 <span class="rating">Рейтинг: 8,5</span>
               </div>
             </li>
@@ -262,10 +271,16 @@
               <div class="hotel-info">
                 <span class="hotel-card-type">Гостиница</span>
                 <span class="hotel-card-price">От 5000 ₽</span>
-                <a class="button-hotel hotel-more" href="#">Подробнее</a>
-                <button class="button button-selected" type="button">
+                <a class="button button-brown button-hotel" href="#">Подробнее</a>
+                <button class="button button-green button-hotel" type="button">
                   В избранном
                 </button>
+                <div class="stars-wrap" aria-label="Рейтинг в звёздах.">
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                </div>
                 <span class="rating">Рейтинг: 9,2</span>
               </div>
             </li>
@@ -282,10 +297,15 @@
               <div class="hotel-info">
                 <span class="hotel-card-type">Гостиница</span>
                 <span class="hotel-card-price">От 2500 ₽</span>
-                <a class="button-hotel hotel-more" href="#">Подробнее</a>
-                <button class="button button-blue" type="button">
+                <a class="button button-brown button-hotel" href="#">Подробнее</a>
+                <button class="button button-blue button-hotel" type="button">
                   В избранное
                 </button>
+                <div class="stars-wrap" aria-label="Рейтинг в звёздах.">
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                </div>
                 <span class="rating">Рейтинг: 6,9</span>
               </div>
             </li>
@@ -302,21 +322,25 @@
               <div class="hotel-info">
                 <span class="hotel-card-type">Гостиница</span>
                 <span class="hotel-card-price">От 1500 ₽</span>
-                <a class="button-hotel hotel-more" href="#">Подробнее</a>
-                <button class="button favorite" type="button">
+                <a class="button button-brown button-hotel" href="#">Подробнее</a>
+                <button class="button button-blue button-hotel" type="button">
                   В избранное
                 </button>
+                <div class="stars-wrap" aria-label="Рейтинг в звёздах.">
+                  <span class="star"></span>
+                  <span class="star"></span>
+                </div>
                 <span class="rating">Рейтинг: 5,0</span>
               </div>
             </li>
           </ul>
           <!--Пагинация-->
           <ul class="pagination-list">
-            <li class="pagination-list-item current"><a href="#">1</a></li>
+            <li class="pagination-list-current">1</li>
             <li class="pagination-list-item"><a href="#">2</a></li>
             <li class="pagination-list-item"><a href="#">3</a></li>
             <li class="pagination-list-item"><a href="#">4</a></li>
-            <li class="pagination-list-item"><a href="#">...</a></li>
+            <li class="pagination-list-divider">...</li>
             <li class="pagination-list-item"><a href="#">10</a></li>
           </ul>
         </section>
