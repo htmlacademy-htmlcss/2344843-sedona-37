@@ -510,7 +510,7 @@ body {
 
 .subscribe {
   padding: 96px 258px 104px;
-  background-image: url("/img/index/subscribe-background.jpg");
+  background-image: url("../img/index/subscribe-background.jpg");
   background-size: cover;
   background-position: center;
   background-color: #ffffff;
@@ -730,7 +730,7 @@ body {
 .catalog-section {
   padding: 35px 70px 70px;
   color: #ffffff;
-  background-image: url("/img/catalog/background-catalog.jpg");
+  background-image: url("../img/catalog/background-catalog.jpg");
   background-size: cover;
   background-position: center;
 }
