@@ -8,11 +8,10 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-
   <body>
     <div class="page-container">
       <!-- Хедер -->
-      <header class="main-header">
+      <header class="main-header" data-test="header">
         <!-- Логотип -->
         <a href="index.html" class="navigation-logo">
           <img
@@ -58,9 +57,9 @@
           </ul>
         </nav>
       </header>
-      <main class="main-container main-catalog">
+      <main class="main-container main-catalog" data-test="main">
         <!--Каталог-->
-        <section class="catalog-section">
+        <section class="catalog-section" data-test="filter">
           <header class="catalog-header">
             <h1 class="main-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
@@ -232,7 +231,7 @@
             </ul>
           </section>
           <!--Каталог-->
-          <ul class="hotel-card-list">
+          <ul class="hotel-card-list" data-test="catalog">
             <li class="hotel-card-item">
               <a class="hotel-card-link" href="#">
                 <img
@@ -346,7 +345,7 @@
           </ul>
         </section>
         <!--Рассылка-->
-        <section class="subscribe subscribe-catalog">
+        <section class="subscribe subscribe-catalog" data-test="subscribe">
           <header class="section-header">
             <h2 class="section-header-subject">Подпишитесь на рассылку</h2>
             <p class="section-header-text">
@@ -373,7 +372,7 @@
         </section>
       </main>
       <!--Футер-->
-      <footer class="page-footer">
+      <footer class="page-footer"data-test="footer">
         <!--Социальные сети-->
         <div class="footer-column footer-column-social">
           <ul class="social-list">

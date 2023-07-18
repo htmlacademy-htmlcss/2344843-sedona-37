@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <!--Модалка-->
+    <div class="modal-container" data-test="modal">
+      <div class="modal modal-card">
+        <button class="modal-close-button close" type="button">
+          <svg
+            width="15"
+            height="15"
+            viewBox="0 0 15 15"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.4905 1.78288L13.1982 0.49057L7.49048 6.19826L1.78279 0.49057L0.490479 1.78288L6.19817 7.49057L0.490479 13.1983L1.78279 14.4906L7.49048 8.78288L13.1982 14.4906L14.4905 13.1983L8.78279 7.49057L14.4905 1.78288Z"
+              fill="currentColor"
+            />
+          </svg>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в седоне</h2>
+          <form class="arrival-date-form" action="#" method="post">
+            <p class="field-group">
+              <label class="option-form" for="data-in"> Дата Заезда: </label>
+              <input
+                class="check-date"
+                type="text"
+                name="data-in"
+                placeholder="Укажите дату заезда"
+                value="27 апреля 2020"
+                required
+              />
+              <span class="input-text error">
+                Мы не можем отправить вас в прошлое.
+              </span>
+            </p>
+            <p class="field-group">
+              <label class="option-form" for="data-out"> Дата Выезда: </label>
+              <input
+                class="check-date"
+                type="text"
+                name="data-out"
+                placeholder="Укажите дату выезда"
+                value="1 сентября 2023"
+                required
+              />
+              <span class="input-text">
+                На эти даты есть свободные номера. Пока есть.
+              </span>
+            </p>
+            <div class="quantity-select">
+              <div class="add-option">
+                <span class="visually-hidden">
+                  Укажите количество гостей.
+                </span>
+                <label class="form-label" for="adult"> Взрослые: </label>
+                <ul class="select-number">
+                  <li class="select-number-item">
+                    <button class="button button-minus" type="button">
+                      <svg
+                        width="14"
+                        height="2"
+                        viewBox="0 0 14 2"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M0 0L0 2L14 2V0L0 0Z" />
+                      </svg>
+                      <span class="visually-hidden"> Убавить гостя. </span>
+                    </button>
+                  </li>
+                  <li class="select-number-item">
+                    <input
+                      class="number"
+                      type="text"
+                      name="adult"
+                      value="2"
+                      required
+                    />
+                  </li>
+                  <li class="select-number">
+                    <button class="button button-plus" type="button">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                      </svg>
+                      <span class="visually-hidden"> Добавить гостя. </span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="add-option">
+                <div class="label-tooltip-container">
+                  <span class="form-label">
+                    <label class="form-label-option" for="children">
+                      Дети:
+                    </label>
+                    <span class="tooltip">
+                      <button class="tooltip-toggle" type="button">
+                        <svg
+                          class="tooltip-icon"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M9 4H11V6H9V4ZM11 16H9V7H11V16Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </button>
+                      <span class="tooltip-text" role="tooltip">
+                        Укажите количество детей, которые будут с вами, возраст
+                        которых от 6 до 18 лет. Дети до 6 лет размещаются
+                        бесплатно.
+                      </span>
+                    </span>
+                  </span>
+                </div>
+                <ul class="select-number">
+                  <li class="select-number-item">
+                    <button class="button button-minus" type="button">
+                      <svg
+                        width="14"
+                        height="2"
+                        viewBox="0 0 14 2"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M0 0L0 2L14 2V0L0 0Z" />
+                      </svg>
+                      <span class="visually-hidden"> Убавить гостя. </span>
+                    </button>
+                  </li>
+                  <li class="select-number-item">
+                    <div class="select-number">
+                      <input
+                        class="number"
+                        type="text"
+                        name="children"
+                        value="2"
+                        required
+                      />
+                    </div>
+                  </li>
+                  <li class="select-number-item">
+                    <button class="button button-plus" type="button">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                      </svg>
+                      <span class="visually-hidden"> Добавить гостя. </span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button class="button button-search-modal" type="submit">
+              Найти
+              <span class="visually-hidden">
+                Подобрать подходящую гостиницу.
+              </span>
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
