@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-
   <body>
     <div class="page-container">
       <!-- Хедер -->
-      <header class="main-header">
+      <header class="main-header" data-test="header">
         <!-- Логотип -->
         <a href="index.html" class="navigation-logo">
           <img
@@ -57,9 +57,9 @@
           </ul>
         </nav>
       </header>
-      <main class="main-container main-catalog">
+      <main class="main-container main-catalog" data-test="main">
         <!--Каталог-->
-        <section class="catalog-section">
+        <section class="catalog-section" data-test="filter">
           <header class="catalog-header">
             <h1 class="main-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
@@ -200,7 +200,7 @@
             </div>
           </form>
         </section>
-        <section class="catalog">
+        <section class="catalog" data-test="catalog">
           <h2 class="visually-hidden">Список гостиниц</h2>
           <section class="catalog-hotels-select">
             <h3 class="visually-hidden">Сортировка гостиниц</h3>
@@ -264,7 +264,7 @@
                   src="img/catalog/villas.jpg"
                   width="300"
                   height="212"
-                  alt=""
+                  alt="Горы"
                 />
                 <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
               </a>
@@ -290,7 +290,7 @@
                   src="img/catalog/desert.jpg"
                   width="300"
                   height="212"
-                  alt=""
+                  alt="Гостиница с видом на пустыню"
                 />
                 <h3 class="hotel-card-title">Desert Quail Inn</h3>
               </a>
@@ -315,7 +315,7 @@
                   src="img/catalog/greentree.jpg"
                   width="300"
                   height="212"
-                  alt=""
+                  alt="Гора с ночным небом на фоне"
                 />
                 <h3 class="hotel-card-title">GreenTree Inn</h3>
               </a>
@@ -345,7 +345,7 @@
           </ul>
         </section>
         <!--Рассылка-->
-        <section class="subscribe subscribe-catalog">
+        <section class="subscribe subscribe-catalog" data-test="subscribe">
           <header class="section-header">
             <h2 class="section-header-subject">Подпишитесь на рассылку</h2>
             <p class="section-header-text">
@@ -372,7 +372,7 @@
         </section>
       </main>
       <!--Футер-->
-      <footer class="page-footer">
+      <footer class="page-footer"data-test="footer">
         <!--Социальные сети-->
         <div class="footer-column footer-column-social">
           <ul class="social-list">

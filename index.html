@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <div class="page-container">
+    <div class="page-container" data-test="header">
       <!-- Хедер -->
       <header class="main-header">
         <!-- Логотип -->
@@ -57,9 +58,9 @@
         </nav>
       </header>
       <!-- Тело -->
-      <main class="main-container main-index">
+      <main class="main-container main-index" data-test="main">
         <!-- Герой -->
-        <section class="hero">
+        <section class="hero" data-test="hero">
           <h1 class="visually-hidden">
             Добро пожаловать в великолепную Седону
           </h1>
@@ -72,7 +73,7 @@
           />
         </section>
         <!-- Преимущества -->
-        <section class="advantages">
+        <section class="advantages" data-test="advantages">
           <header class="section-header">
             <h2 class="section-header-subject">
               Седона — небольшой городок в Аризоне,<br />
@@ -142,7 +143,7 @@
           </ul>
         </section>
         <!-- Путешествие -->
-        <section class="travel">
+        <section class="travel" data-test="service">
           <header class="section-header">
             <h2 class="section-header-subject">
               Приезжайте в Седону отдохнуть<br />
@@ -178,7 +179,7 @@
           </ul>
         </section>
         <!-- Поиск гостиниц -->
-        <section class="search-hotel">
+        <section class="search-hotel" data-test="search">
           <header class="section-header">
             <h3 class="section-header-subject">Заинтересовались?</h3>
             <p class="section-header-text">
@@ -189,7 +190,7 @@
           <a href="#" class="button button-brown">ПОИСК ГОСТИНИЦЫ В седоне</a>
         </section>
         <!-- Рассылка -->
-        <section class="subscribe">
+        <section class="subscribe" data-test="subscribe">
           <header class="section-header">
             <h2 class="section-header-subject white">
               Подпишитесь на рассылку
@@ -218,7 +219,7 @@
         </section>
       </main>
       <!-- Футер -->
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <!--Социальные сети-->
         <div class="footer-column footer-column-social">
           <ul class="social-list">
