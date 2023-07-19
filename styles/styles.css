@@ -97,6 +97,19 @@ body {
   height: 70px;
 }
 
+.navigation-logo:hover {
+opacity: 0.6;
+}
+
+.navigation-logo:active {
+  opacity: 0.3;
+  }
+
+.navigation-logo:focus-visible {
+  opacity: 0.6;
+  outline: none;
+}
+
 .navigation-logo img {
   display: block;
 }
@@ -140,7 +153,6 @@ body {
 
 .navigation-link-current::after {
   position: absolute;
-  z-index: 1;
   left: 16px;
   right: 16px;
   bottom: -1px;
@@ -192,12 +204,45 @@ body {
   color: #ffffff;
   background-color: #7db54f;
   border-radius: 10px;
+  min-width: 20px;
 }
 
 .navigation-menu-item .button {
   min-width: 160px;
   padding: 8px 30px;
   margin: 14px 0 14px 20px;
+}
+
+.navigation-menu-item:hover:not(:last-child) {
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.navigation-menu-item:active:not(:last-child) {
+  opacity: 0.3;
+}
+
+.navigation-link-search:focus-visible {
+  outline: none;
+  opacity: 0.3;
+}
+
+.navigation-link-heart:focus-visible {
+  outline: none;
+  opacity: 0.3;
+}
+
+.navigation-link:hover {
+  opacity: 0.6;
+}
+
+.navigation-link:active {
+  opacity: 0.3;
+}
+
+.navigation-link:focus-visible {
+  outline: none;
+  opacity: 0.6;
 }
 
 .button {
@@ -700,6 +745,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 143px;
 }
 
 .social-link {
@@ -1004,6 +1050,11 @@ body {
     outline-offset: unset;
   }
 }
+
+.control-input:disabled {
+  opacity: 0.3;
+  pointer-events: none;
+  }
 
 .control:active {
   opacity: 0.3;
@@ -1310,6 +1361,16 @@ body {
      background-color: #68a2ca;
 }
 
+.hotel-card-link img:hover {
+  transition: 0.3s;
+  transform: scale(1.02);
+}
+
+.hotel-card-link img:active {
+  transition: 0.3s;
+  transform: scale(0.95);
+}
+
 .hotel-card-title {
   margin: 0;
   margin-top: 10px;
@@ -1317,6 +1378,18 @@ body {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
+}
+
+.hotel-card-title:hover {
+  opacity: 0.6;
+}
+
+.hotel-card-title:active {
+  opacity: 0.3;
+}
+
+.hotel-card-title:focus-visible {
+  opacity: 0.6;
 }
 
 .hotel-info {
@@ -1563,6 +1636,7 @@ color: rgba(255, 255, 255, 0.30);
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
+  width: 540px;
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
   font-weight: 700;
@@ -1880,4 +1954,18 @@ display: block;
   background-color: #83b3d3;
   border: none;
   border-radius: 10px;
+}
+
+.button-search-modal:hover {
+  background-color:#68A2CA;
+}
+
+.button-search-modal:active {
+  opacity: 0.3;
+  background-color:#68A2CA
+}
+
+.button-search-modal:focus-visible {
+  outline: none;
+  background-color:#68A2CA
 }
