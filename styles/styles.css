@@ -344,6 +344,7 @@ body {
   background: url("../img/divider.svg") no-repeat center bottom,
     url("../img/index/index-background.jpg") no-repeat center;
   background-size: contain, cover;
+  background-color: #68a2ca;
 }
 
 .hero-img {
@@ -456,22 +457,19 @@ body {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  height: 100%;
+  min-height: 100%;
 }
 
 .content-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 400px;
   min-height: 385px;
+  padding: 112px 85px;
+  text-align: center;
+}
+
+.content-wrap-img {
+  width: 400px;
+  height: 100%;
   padding: 102px 85px;
   text-align: center;
 }
@@ -567,7 +565,7 @@ body {
   background-image: url("../img/index/subscribe-background.jpg");
   background-size: cover;
   background-position: center;
-  background-color: #ffffff;
+  background-color: #68a2ca;
 }
 
 .subscribe-catalog {
@@ -829,6 +827,7 @@ body {
   background-image: url("../img/catalog/background-catalog.jpg");
   background-size: cover;
   background-position: center;
+  background-color: #68a2ca;
 }
 .catalog-header {
   margin-bottom: 40px;
@@ -1308,6 +1307,7 @@ body {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+     background-color: #68a2ca;
 }
 
 .hotel-card-title {
@@ -1557,6 +1557,7 @@ color: rgba(255, 255, 255, 0.30);
         -ms-flex-direction: column;
             flex-direction: column;
     width: 577px;
+    min-height: 448px;
 }
 
 .modal-title {
@@ -1665,14 +1666,15 @@ color: rgba(255, 255, 255, 0.30);
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
-  padding: 22px 20px 20px 19px;
+  padding: 20px 20px 20px 21px;
   border-radius: 10px;
-  width: 216px;
+  width: 257px;
+  height: 140px;
   position: absolute;
-  top: 100%;
+  top: 29px;
   margin-top: 13px;
   margin-left: 5px;
-  left: 50%;
+  left: 7px;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -1699,7 +1701,7 @@ color: rgba(255, 255, 255, 0.30);
   bottom: 100%;
   left: 0;
   right: 0;
-  margin-left: auto;
+  margin-left: 116px;
   margin-right: auto;
 }
 
